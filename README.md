@@ -25,4 +25,4 @@ new ShowPasswordManager(configuration)
 |Key|Default value|Description|
 |-|-|-|
 |`buttonSelector`|`"[data-show-password]"`|The selector that will be used to search all the show buttons
-|`inputSelector`|`"data-input-password"`|The selector that will be used to search all the password inputs
+|`inputSelector`|`"[data-input-password]"`|The selector that will be used to search all the password inputs
