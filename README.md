@@ -26,3 +26,5 @@ new ShowPasswordManager(configuration)
 |-|-|-|
 |`buttonSelector`|`"[data-show-password]"`|The selector that will be used to search all the show buttons
 |`inputSelector`|`"[data-input-password]"`|The selector that will be used to search all the password inputs
+
+If you use your own configuration, you still need to use attributes.
