@@ -1,3 +1,7 @@
+/**
+ * Entry point
+ */
+
 import BaseConfig from './BaseConfig'
 import {ShowPasswordManager} from './ShowPassword'
 
