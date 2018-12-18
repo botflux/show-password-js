@@ -2,7 +2,7 @@
   "name": "show-password",
   "version": "1.0.0",
   "description": "A simple show password functionnality",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "dev": "webpack-dev-server --open --config webpack.dev.config.js",
     "build": "webpack --config webpack.prod.config.js"
