@@ -1,6 +1,6 @@
 {
   "name": "show-password.js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple show password functionnality",
   "keywords": ["show password", "simple", "no dependencies", "password", "show-password"],
   "main": "src/index.js",
