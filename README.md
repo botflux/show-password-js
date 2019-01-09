@@ -30,9 +30,9 @@ If you use your own configuration, you still need to use attributes.
 ## References
 
 ```js
-import { ShowPasswordManager, BaseConfig } from 'show-password.js'
+import ShowPasswordManager from 'show-password.js'
 
 // default config
-new ShowPasswordManager(BaseConfig)
+new ShowPasswordManager()
 new ShowPasswordManager({ buttonSelector: '[input-selector]', inputSelector: '[input-selector]' })
 ```

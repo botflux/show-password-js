@@ -1,5 +1,3 @@
-import base from './BaseConfig'
-
 /**
  * Handles all the password buttons
  */
@@ -8,19 +6,19 @@ export class ShowPasswordManager {
      * Initializes a new instance of ShowPasswordManager with the configuration. If no configuration is given then the default configuration will be used.
      * @param {Object} config configuration of this instance
      */
-    constructor (config = baseConfig) {
-        console.log(config)
-        this.config = config
+    constructor ({ buttonSelector = '[data-show-password]', inputSelector = '[data-input-password]' }) {
+        this.buttonSelector = buttonSelector
+        this.inputSelector = inputSelector
         // get all the buttons
-        this.buttons = document.querySelectorAll(config.buttonSelector)
+        this.buttons = document.querySelectorAll(buttonSelector)
         
         // if buttons is not null and buttons.forEach is not then we can iterate throught the collection
         if (this.buttons && this.buttons.forEach) {
             this.buttons.forEach (b => {
                 // get the id of the button
-                let buttonID = b.getAttribute(this.trimAttribute(this.config.buttonSelector))
+                let buttonID = b.getAttribute(this.trimAttribute(this.buttonSelector))
                 // get the input matching the button id
-                let input = document.querySelector(`[${this.trimAttribute(this.config.inputSelector)}="${buttonID}"]`)
+                let input = document.querySelector(`[${this.trimAttribute(this.inputSelector)}="${buttonID}"]`)
     
                 // if input is not null and if the button has an addEventListener method then we can add a listener on the button
                 if (input && b.addEventListener) {
@@ -45,6 +43,7 @@ export class ShowPasswordManager {
     /**
      * Slice the '[' and ']' characters from an attribute
      * @param {String} attr an attribute
+     * @return {String}
      */
     trimAttribute (attr) {
         return attr.replace(/[\[\]]+/g, '')
