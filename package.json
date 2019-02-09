@@ -1,12 +1,16 @@
 {
   "name": "show-password.js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A simple show password functionnality",
   "keywords": ["show password", "simple", "no dependencies", "password", "show-password"],
   "main": "src/index.js",
   "scripts": {
     "dev": "webpack-dev-server --open --config webpack.dev.config.js",
     "build": "webpack --config webpack.prod.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/botflux/show-password.js"
   },
   "author": "Victor Mendele",
   "license": "MIT",
