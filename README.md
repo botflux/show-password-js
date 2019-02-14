@@ -10,7 +10,7 @@ A library to see what you have typed in a password field.
 <span data-show-password="1">See</span> 
 ```
 
-The ID used in `show-input-password` and `data-show-password` need to match.
+The ID used in `data-input-password` and `data-show-password` need to match.
 
 ## Configuration
 
