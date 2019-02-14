@@ -6,7 +6,7 @@ A library to see what you have typed in a password field.
 ```
 
 ```html
-<input type="password" show-input-password="1">
+<input type="password" data-input-password="1">
 <span data-show-password="1">See</span> 
 ```
 
